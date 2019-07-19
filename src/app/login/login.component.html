@@ -1,0 +1,27 @@
+<form [formGroup]="form">
+    <fieldset>
+        <h1>Login</h1>
+        <table>
+          <td>
+            <tr>
+              <div class="form-field">
+                  <label>Username:</label>
+                  <input name="email" formControlName="email" >
+              </div>
+            </tr>
+            <tr>
+              <div class="form-field">
+                <label>Password:</label>
+                <input name="password" formControlName="password" 
+                   type="password">
+              </div>
+            </tr>
+          </td>
+        </table>
+      <div class="form-buttons">
+          <button class="button button-primary" 
+                  (click)="login()">Login</button>
+      </div>
+      <label>{{labelText}}</label>
+    </fieldset>
+</form>
